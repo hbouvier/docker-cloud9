@@ -17,4 +17,6 @@ If the container stops (cloud9 crash or your docker server goes down) you can re
 
 	./restart.sh
 
+Now you can access your own Cloud9 by accessing http://__your_docker_server__:3131
+
 
