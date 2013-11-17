@@ -25,5 +25,6 @@ RUN cd /cloud9 && sm install
 RUN mkdir /workspace
 VOLUME /workspace
 
-EXPOSE 3131:3131
-CMD ["/bin/bash", "-c", "'/cloud9/bin/cloud9.sh -l 0.0.0.0 -w /workspace'"]
+ENV PORT 5000
+EXPOSE 5000 
+CMD /cloud9/bin/cloud9.sh -l 0.0.0.0 -p 5000 -w /workspace
